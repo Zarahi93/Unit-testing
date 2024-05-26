@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-26T04:56:03.423Z",
+    "end": "2024-05-26T04:56:03.428Z",
+    "duration": 5,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5adbc06f-fe56-4aa5-a994-bb653ed6348b",
+      "title": "",
+      "fullFile": "C:\\Users\\adahi\\Documents\\GitLab\\Testing\\Unit-testing\\test\\numbers-validator\\isNumberEven.spec.js",
+      "file": "\\test\\numbers-validator\\isNumberEven.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d443a621-0350-423e-9ef7-d5bbd16304f2",
+          "title": "isNumberEven",
+          "fullFile": "C:\\Users\\adahi\\Documents\\GitLab\\Testing\\Unit-testing\\test\\numbers-validator\\isNumberEven.spec.js",
+          "file": "\\test\\numbers-validator\\isNumberEven.spec.js",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"isNumberEven\"",
+              "fullTitle": "isNumberEven \"before each\" hook in \"isNumberEven\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Instantiates a new NumbersValidator object before each test and assigns it to 'validator'\nvalidator = new NumbersValidator();",
+              "err": {},
+              "uuid": "e98bd785-1b7f-495b-94d3-3789dd353e09",
+              "parentUUID": "d443a621-0350-423e-9ef7-d5bbd16304f2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"isNumberEven\"",
+              "fullTitle": "isNumberEven \"after each\" hook in \"isNumberEven\"",
+              "timedOut": false,
+              "duration": 0,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Sets the validator variable to null to clean up memory after each test\nvalidator = null;",
+              "err": {},
+              "uuid": "84e9039a-6367-41c7-a771-c2c6e1b0503f",
+              "parentUUID": "d443a621-0350-423e-9ef7-d5bbd16304f2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "should return true if number is even",
+              "fullTitle": "isNumberEven should return true if number is even",
+              "timedOut": false,
+              "duration": 0,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Using 'expect' to assert that the 'isNumberEven' method returns true when\n// passed the even number 4. The '.to.be.equal(true)' is the actual assertion check.\nexpect(validator.isNumberEven(4)).to.be.equal(true);",
+              "err": {},
+              "uuid": "1ae4c3f6-90f3-4505-ad2a-082a872b0736",
+              "parentUUID": "d443a621-0350-423e-9ef7-d5bbd16304f2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1ae4c3f6-90f3-4505-ad2a-082a872b0736"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
