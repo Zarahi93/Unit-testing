@@ -1,14 +1,14 @@
 {
   "stats": {
     "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "tests": 2,
+    "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2024-05-26T04:56:03.423Z",
-    "end": "2024-05-26T04:56:03.428Z",
-    "duration": 5,
-    "testsRegistered": 1,
+    "start": "2024-05-26T05:41:42.210Z",
+    "end": "2024-05-26T05:41:42.220Z",
+    "duration": 10,
+    "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5adbc06f-fe56-4aa5-a994-bb653ed6348b",
+      "uuid": "ea3a23c5-567c-448d-a64a-9416272c2905",
       "title": "",
       "fullFile": "C:\\Users\\adahi\\Documents\\GitLab\\Testing\\Unit-testing\\test\\numbers-validator\\isNumberEven.spec.js",
       "file": "\\test\\numbers-validator\\isNumberEven.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d443a621-0350-423e-9ef7-d5bbd16304f2",
+          "uuid": "16ef44d1-e7c5-4303-a181-e2e9a87a4f5a",
           "title": "isNumberEven",
           "fullFile": "C:\\Users\\adahi\\Documents\\GitLab\\Testing\\Unit-testing\\test\\numbers-validator\\isNumberEven.spec.js",
           "file": "\\test\\numbers-validator\\isNumberEven.spec.js",
@@ -45,8 +45,8 @@
               "context": null,
               "code": "// Instantiates a new NumbersValidator object before each test and assigns it to 'validator'\nvalidator = new NumbersValidator();",
               "err": {},
-              "uuid": "e98bd785-1b7f-495b-94d3-3789dd353e09",
-              "parentUUID": "d443a621-0350-423e-9ef7-d5bbd16304f2",
+              "uuid": "28de9bf6-fcc5-4613-9037-5d42d06374a4",
+              "parentUUID": "16ef44d1-e7c5-4303-a181-e2e9a87a4f5a",
               "isHook": true,
               "skipped": false
             }
@@ -65,8 +65,8 @@
               "context": null,
               "code": "// Sets the validator variable to null to clean up memory after each test\nvalidator = null;",
               "err": {},
-              "uuid": "84e9039a-6367-41c7-a771-c2c6e1b0503f",
-              "parentUUID": "d443a621-0350-423e-9ef7-d5bbd16304f2",
+              "uuid": "03bc195e-650a-46f9-ad6f-957aaae3c116",
+              "parentUUID": "16ef44d1-e7c5-4303-a181-e2e9a87a4f5a",
               "isHook": true,
               "skipped": false
             }
@@ -76,7 +76,7 @@
               "title": "should return true if number is even",
               "fullTitle": "isNumberEven should return true if number is even",
               "timedOut": false,
-              "duration": 0,
+              "duration": 1,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -85,20 +85,39 @@
               "context": null,
               "code": "// Using 'expect' to assert that the 'isNumberEven' method returns true when\n// passed the even number 4. The '.to.be.equal(true)' is the actual assertion check.\nexpect(validator.isNumberEven(4)).to.be.equal(true);",
               "err": {},
-              "uuid": "1ae4c3f6-90f3-4505-ad2a-082a872b0736",
-              "parentUUID": "d443a621-0350-423e-9ef7-d5bbd16304f2",
+              "uuid": "e747beee-f5b2-4068-b5c1-80dbca930839",
+              "parentUUID": "16ef44d1-e7c5-4303-a181-e2e9a87a4f5a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should throw an error when provided a string",
+              "fullTitle": "isNumberEven should throw an error when provided a string",
+              "timedOut": false,
+              "duration": 1,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "expect(()=>{\n  validator.isNumberEven('5');\n}).to.throw('[5] is not of type \"Number\" it is of type \"string\"')",
+              "err": {},
+              "uuid": "1c908623-c443-4bd4-b5e4-b9eb20982daa",
+              "parentUUID": "16ef44d1-e7c5-4303-a181-e2e9a87a4f5a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1ae4c3f6-90f3-4505-ad2a-082a872b0736"
+            "e747beee-f5b2-4068-b5c1-80dbca930839",
+            "1c908623-c443-4bd4-b5e4-b9eb20982daa"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 0,
+          "duration": 2,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

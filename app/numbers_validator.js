@@ -16,8 +16,7 @@ export class NumbersValidator {
         return number % 2 === 0;
       }
     }
-  
-    // Method to extract even numbers from an array
+  // Method to extract even numbers from an array
     // @param {Array<Number>} arrayOfNumbers - The array containing numbers to be checked
     // @return {Array<Number>} - An array of even numbers
     getEvenNumbersFromArray(arrayOfNumbers) {
