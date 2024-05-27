@@ -65,7 +65,16 @@ it('should return true if all are numbers', function () {
   expect(validator.isAllNumbers([2,4,6])).to.be.equal(true);
 });
 
+it('should throw an error if the value is not a number',()=>{
+  const value = '8';
+  expect(()=>{
+    validator.isInteger(value);
+  }).to.throw('[8] is not a number')});
 
+  it('should return true if value is a number', function () {
+ 
+    expect(validator.isInteger(5)).to.be.equal(true);
+  });
 
 });
 
